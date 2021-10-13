@@ -1,0 +1,36 @@
+{
+    "name": "lswl/laravel-sms",
+    "description": "Laravel sms helper.",
+    "keywords": [
+        "lswl",
+        "laravel",
+        "sms",
+        "helper"
+    ],
+    "homepage": "https://linshaowl.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linshaowl",
+            "email": "linshaowl@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lswl\\SmsHelper\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "lswl/laravel-support": "^8.0",
+        "lswl/sms": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lswl\\SmsHelper\\LswlServiceProvider"
+            ]
+        }
+    }
+}
